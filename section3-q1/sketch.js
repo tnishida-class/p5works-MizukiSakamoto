@@ -10,9 +10,15 @@ function setup(){
 function balloon(t){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
-  let p = 2;
-  fill(0);
-  rect(0, 0, w + p * 2, h + p * 2);
+  let p = 80;
   fill(255);
+  ellipse(150, 150, w + p * 2, h + p * 2);
+  fill(0);
   text(t, p, h + p);
+  beginShape();
+  fill(255)
+  vertex(220,200);
+  vertex(250,300);
+  vertex(180,220);
+  endShape();
 }
