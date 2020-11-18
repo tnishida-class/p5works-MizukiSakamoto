@@ -1,16 +1,20 @@
-// チェコです
+// ギリシャ国旗
 
 function setup() {
-  createCanvas(300, 200);
+  createCanvas(250, 150);
 }
 
 function draw() {
   background('white');
   noStroke();
   noFill();
-  rect(0,0,300,100);
-  fill('red');
-  rect(0,100,300,100);
+  for(let i = 0; i < 9; i++){
+    fill('blue');
+    rect(0, i*30, 250, 15);
+  }
   fill('blue');
-  triangle(0,0,0,200,150,100);
+  rect(0,0,75,75);
+  fill('white');
+  rect(30, 0, 15, 75);
+  rect(0, 30, 75, 15);
 }
